@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Page gossip</title>
+  </head>
+  <body>
+    <h1>PAGE POTIN</h1>
+    <h2>Voici la page du potin n°<%= params['id'] %></h2>
+
+    <h2>Auteur du potin :</h2>
+    <%= Gossip.find(params['id']).author %><br/>
+    <h2>Contenu du potin :</h2>
+    <%= Gossip.find(params['id']).content %>
+    
+  </body>
+</html>
