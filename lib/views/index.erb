@@ -4,8 +4,8 @@
   </head>
   <body>
     <h1>Mon super site de gossip, depuis le dossier views !</h1>
-    <h2>Bienvenue, la liste des potins is coming soon. En attendant, clique sur ce lien pour créer des potins :</h2>
-    <a href="/gossips/new">Créer ton potin</a>
+    <h2>Bienvenue, clique sur ce lien pour créer des potins :</h2>
+    <a href="/gossips/new/">Créer ton potin</a>
 
     <% gossips.each_with_index do |gossip, index| %>
         <p>
@@ -13,7 +13,7 @@
           <%= index %><br/>
           <%= gossip.author %><br/>
           <%= gossip.content %><br/>
-          <a href="/gossip/<%=index%>/">Lien vers le potin</a>
+          <a href="/gossips/<%=index%>/">Lien vers le potin</a>
         </p>
       <% end %>
     
